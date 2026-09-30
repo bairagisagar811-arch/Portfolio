@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+* {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+
+
+        body {
+            background-size: cover;
+            background-image: url(background\ image\ my\ portfolio.png);
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+        }
+
+        .main {
+            display: flex;
+        }
+
+        .header {
+            display: flex;
+            flex-direction: column;
+            width: 280px;
+            min-height: 100vh;
+            background-color: rgb(21, 21, 48)
+        }
+
+        .profile {
+
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .profile img {
+            width: 80%;
+            background-position: center;
+            object-fit: cover;
+            object-position: top;
+            display: block;
+            border-radius: 50%;
+            padding: 20px;
+
+        }
+
+        .text {
+            color: white;
+            text-align: center;
+            padding: 15px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .text p {
+            font-size: 25px;
+        }
+
+        .header2 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 50px;
+            gap: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+
+        .header2 a {
+            color: white;
+            padding: 10px;
+            text-decoration: none;
+
+        }
+
+        .header2 div {
+            width: 200px;
+            display: flex;
+            justify-content: center;
+            border-radius: 10px;
+
+        }
+
+        .header2 div:hover {
+            background-color: blueviolet;
+        }
+
+        .main2 {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .about {
+            display: flex;
+            gap: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+            padding: 20px;
+            margin-top: 30px;
+            font-size: 25px
+        }
+
+        .me {
+            color: #A26DD3;
+        }
+
+        .mainabout {
+            padding: 20px;
+            text-align: center;
+            height: 150px;
+            width: 300px;
+            display: flex;
+            flex-wrap: wrap;
+
+        }
+
+        .mainabout span {
+            font-family: Arial, Helvetica, sans-serif;
+            margin-left: 18px;
+            color: wheat;
+        }
+
+        .container {
+            display: flex;
+            margin-left: 20px;
+        }
+
+        .image {
+            border: 2px solid blueviolet;
+            overflow: hidden;
+            margin-top: 50px;
+            border-radius: 30px;
+            background-position: left;
+            /* object-fit: cover; */
+            height: 300px;
+            width: 290px;
+
+
+        }
+
+        .image img {
+            background-size: contain;
+            border-radius: 20px;
+            /* object-fit: cover; */
+            width: 100%;
+            height: 100%;
+
+        }
+
+        .main3 {
+            display: flex;
+            flex-direction: column;
+            margin-top: 80px;
+            margin-left: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+
+        .hi h2 {
+            color: white;
+            font-size: 38px;
+        }
+
+        .hi h3 {
+            color: blueviolet;
+            font-size: 35px;
+        }
+
+        .skills {
+            margin-top: 20px;
+            color: antiquewhite;
+            font-size: 20px;
+
+        }
+
+        .last {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 30px;
+            margin-left: 20px;
+            height: 100px;
+            width: 800px;
+            background-color: rgb(135, 128, 143);
+            padding: 20px;
+            border-radius: 20px;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            border: 1px solid blueviolet;
+            align-items: center;
+        }
+        .footer {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .button {
+            margin-top: 20px;
+            margin-bottom: 20px;
+
+        }
+
+        .button button {
+            font-size: 20px;
+            padding: 8px;
+            border-radius: 10px;
+            border: 1px solid white;
+            background-color: transparent;
+            color: white;
+            font-weight: bold;
+        }
+
+        .button button:hover {
+            background-color: blueviolet;
+            
+        }
+@media (max-width: 600px) {
+
+    /* Main layout */
+    .main {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    /* Header */
+    .header {
+        width: 100%;
+        min-height: auto;
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+    }
+
+    /* Profile image */
+    .profile img {
+        width: 160px;
+        height: 160px;
+        margin-top: 20px;
+        padding: 10px;
+    }
+
+    /* Profile text */
+    .text {
+        padding: 10px;
+    }
+
+    .text h2 {
+        font-size: 25px;
+    }
+
+    .text p {
+        font-size: 18px;
+    }
+
+    /* Navigation */
+    .header2 {
+        font-size: 16px;
+        margin-top: 15px;
+        gap: 5px;
+    }
+
+    .header2 div {
+        width: 90%;
+    }
+
+    .header2 a {
+        padding: 8px;
+    }
+
+
+    /* About section */
+    .main2 {
+        width: 100%;
+    }
+
+    .mainabout {
+        width: 100%;
+        height: auto;
+        padding: 10px;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about {
+        padding: 5px;
+        margin-top: 10px;
+        font-size: 18px;
+        justify-content: center;
+    }
+
+    .mainabout span {
+        margin-left: 0;
+        font-size: 14px;
+    }
+
+
+    /* Image + Text */
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .image {
+        width: 250px;
+        height: 250px;
+        margin-top: 20px;
+    }
+
+    .image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+
+    /* About text */
+    .main3 {
+        margin-top: 30px;
+        margin-left: 0;
+        padding: 0 20px;
+        text-align: center;
+    }
+
+    .hi h2 {
+        font-size: 25px;
+    }
+
+    .hi h3 {
+        font-size: 23px;
+        margin-top: 8px;
+    }
+
+    .skills {
+        margin-top: 15px;
+        font-size: 15px;
+    }
+
+    .skills p {
+        line-height: 1.6;
+    }
+
+
+    /* Information box */
+    .footer {
+        width: 100%;
+    }
+
+    .last {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+
+        width: 90%;
+        height: auto;
+
+        margin-left: 0;
+        margin-top: 30px;
+
+        padding: 15px;
+        border-radius: 15px;
+    }
+
+    .last div {
+        padding: 8px;
+        font-size: 14px;
+    }
+
+
+    /* Resume button */
+    .button {
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+
+    .button button {
+        font-size: 15px;
+        padding: 10px 15px;
+    }
+}
+
+
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="header">
+
+            <div class="profile">
+                <img src="https://tse1.explicit.bing.net/th/id/OIP.UirWc-_agU3sLXPag8vCUQHaHa?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
+                    alt="">
+            </div>
+
+            <div class="text">
+                <h2>Sagar Madadh</h2>
+                <p>Frontend Developer</p>
+            </div>
+
+            <div class="header2">
+                <div><a href="index.html">Home </a><br></div>
+                <div><a href="about.html">About </a><br></div>
+                <div><a href="skills.html">Skills </a><br></div>
+                <div><a href="project.html">Projects </a><br></div>
+                <div><a href="contact.html">Contact </a></div>
+            </div>
+        </div>
+        <div class="main2">
+            <div class="mainabout">
+                <div class="about">
+                    <h1>About </h1>
+                    <h1 class="me"> Me</h1>
+                </div>
+                <div class="get"><span> Get to know more about me </span></div>
+
+            </div>
+
+            <div class="container">
+                <div class="image">
+                    <img src="sagar image.png" alt="">
+                </div>
+                <div class="main3">
+                    <div class="hi">
+                        <h2>Hi, I'm Sagar Madadh</h2>
+                        <h3>Frontend Developer</h3>
+                    </div>
+                    <div class="skills">
+                        <p>I am a passionate frontend developer <br>
+                            who loves to creat clean, mordern and <br>
+                            responsive websites using HTML & CSS. <br>
+                            I enjoy turning ideas into beautiful <br>
+                            interface and always try to improve <br>
+                            my skills in web design.</p>
+                    </div>
+
+                </div>
+            </div>
+            <div class="footer">
+                <div class="last">
+                    <div>
+                        <p>Age <br>20 Years</p>
+                    </div>
+                    <div>
+                        <p>Education <br>BCA</p>
+                    </div>
+                    <div>
+                        <p>Location <br>Karnal, Haryana</p>
+                    </div>
+                    <div>
+                        <p>Interest <br>Web Design</p>
+                    </div>
+                </div>
+                <div class="button"> <button>Download Resume</button></div>
+
+            </div>
+        </div>
+</body>
+
+</html>
